@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Gamegallery.urls'
+ROOT_URLCONF = 'gmgallery.urls'
 
 TEMPLATES = [
     {
