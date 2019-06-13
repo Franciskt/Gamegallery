@@ -1,21 +1,21 @@
+
 from django.shortcuts import render
-from django.views.generic import ListView
 
 from .models import gmgallery
 
 
 # Create your views here.
-def Gmgallery_list(request):
+def gmgallery_list(request):
     queryset = gmgallery.objects.all()
     context = {
-                 "gmgallery": queryset,
+        "gmgallerys": queryset,
             }
-    return render(request, "index.html", context)
+    return render(request, 'index.html', context)
 
+# class gmgalleryListView(ListView):
+# model = gmgallery
+# template_name = 'index.html'
+# context_object_name = 'gmgallery'
 
-class gmgalleryView(ListView):
-    model = gmgallery
-
-
-def football(request):
-    return render(request, 'football.html', {'title': 'football'})
+# def football(request):
+# return render(request, 'football.html', {'title': 'football'})

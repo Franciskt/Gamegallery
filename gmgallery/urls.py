@@ -18,15 +18,14 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from .views import gmgallery
+from gmgallery.views import gmgallery_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', gmgallery, name='Gmgallery_list')
-    path('', gmgallery, name='gmgallery-index')
+    path('', gmgallery_list, name='gmgallery_list')
+    # path('', gmgallery, name='view.index')
 
 
 ]
-
 if settings.DEBUG:
     urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
