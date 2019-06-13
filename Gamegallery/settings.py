@@ -126,5 +126,5 @@ STATIC_URL = '/static/'
 # os.path.join(BASE_DIR,'static'),
 
 
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "myphoto")
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "Gamegallery/media")
 MEDIA_URL = '/media/'

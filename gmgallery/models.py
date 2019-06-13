@@ -10,7 +10,7 @@ class gmgallery(models.Model):
     width = models.IntegerField(default=0)
     height = models.IntegerField(default=0)
     image = models.ImageField(null=False, blank=False, width_field="width", height_field="height",
-                              upload_to='static/myphoto')
+                              upload_to='media/myphoto')
     #timestamp = models.DateTimeField(auto_now_add=True, auto_now_=False)
     #updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
